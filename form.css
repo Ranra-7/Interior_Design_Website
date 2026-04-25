@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("./Images/body-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#form {
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  background-color: rgba(255, 248, 240, 0.9);
+  border-radius: 10px;
+  border: 5px solid brown;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form h1 {
+  text-align: center;
+  font-size: 28px;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+/* One-column layout */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Two-column layout */
+.form-row-two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+input,
+select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 6px 5px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+}
+
+input:hover,
+select:hover {
+  background-color: #f0f0f0;
+  border-bottom-color: brown;
+}
+
+
+button {
+  
+  margin-top: 10px;
+  padding: 10px 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  position:relative;
+  left:310px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: blanchedalmond;
+  color: black;
+  transform: scale(1.05);
+}
+
+
